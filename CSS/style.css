@@ -1,0 +1,174 @@
+header{
+    background-color:   #879EC8;
+
+}
+
+
+header h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 450px;
+    float: right;
+}
+
+header{
+    margin-bottom: 0;
+    background-image: url("../Images/lighthouselogo.jpg");
+    background-repeat: no-repeat;
+    height: 150px;
+
+}
+
+.flexContainer{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+}
+
+nav{
+    display: block;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    width: 150px;
+    height: 100%;
+    background-color:   #a3bcea;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    background-color: pink;
+    border-bottom: 1px solid #eee;
+}
+
+nav a:hover{
+    background-color: #eee;
+    color: pink;
+}
+
+
+main{
+    padding: 13px;
+    
+}
+
+main h2{
+    color: lightblue;
+}
+
+main img{
+    float: right;
+}
+
+#mobilePic{
+    display: none;
+}
+
+footer{
+    background-color: #7694ca;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+.tabletNav{
+    display: none;
+}
+
+
+@media only screen and (max-width: 759px){
+   
+  
+
+    .flexContainer{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+    header h1{
+        width: 400px;
+        transform: translate(115%,0);
+        color: blue;
+    }
+   
+
+    nav{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    nav a{
+        background-color: rgb(39, 181, 228)
+    }
+
+    main img{
+        display: none;
+ 
+    }
+
+    main h2{
+        color: #879EC8;
+        margin: 0 auto; 
+    }
+
+    main p{
+        margin: 0 auto;
+    }
+
+    main{
+        font-size: 25px;
+
+    }
+
+    #mobilePic{
+        display: block;
+
+    }
+
+    .tabletNav{
+        display: none;
+
+    }
+    
+ 
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 759px) {
+ 
+    nav{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: inline-block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navBar{
+        display: none;
+    }
+
+    .tabletNav{
+        display: block;
+    }
+
+}
